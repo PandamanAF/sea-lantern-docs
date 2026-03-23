@@ -2,7 +2,55 @@
 
 [GitHub Releases](https://github.com/SeaLantern-Studio/SeaLantern/releases)
 
-## v1.0.1 <Badge type="tip" text="最新" />
+## v1.1.0 <Badge type="tip" text="最新" />
+
+[GitHub Release](https://github.com/SeaLantern-Studio/SeaLantern/releases/tag/v1.1.0)
+
+> 2026-03-24
+
+### 重点新增
+- 添加 Docker 支持，并引入独立 `docker-entry` 构建链路
+- 新增服务器核心下载能力
+- 新增服务器崩溃后的异常通知与 panic 报告增强
+- 随程序分发许可证，补充协议弹窗与文档入口
+
+### 修复与优化
+- 修复 Docker 开发模式与依赖拆分相关问题
+- 修复构建警告与 WiX 打包失败问题
+- 修复更新文案、控制台输入及多处 i18n 问题
+- 修复多线程下载器取消后错误跳转
+
+### 工程与重构
+- 后端重构第二阶段与常量定义迁移
+- 下载页与插件页结构重整，交互体验优化
+- CI Runner 统一到 Ubuntu 22.04
+
+---
+
+## v1.0.2
+
+[GitHub Release](https://github.com/SeaLantern-Studio/SeaLantern/releases/tag/v1.0.2)
+
+> 2026-03-04
+
+### 重点新增
+- 添加安全模式
+- 接入 CNB 更新检查与下载回退机制
+- 增强 panic 报告与异常处理能力
+
+### 修复与稳定性
+- 修复安全模式逻辑漏洞
+- 修复非 Linux 平台编译问题
+- 修复 panic_report cfg 守卫与遗留依赖导致的 CI 构建失败
+
+### 重构
+- 优化后端与插件系统性能/安全链路
+- 移除异步运行时并优化 Linux panic 处理
+- 拆分 DownloadFileView 并优化前端结构
+
+---
+
+## v1.0.1
 
 [GitHub Release](https://github.com/SeaLantern-Studio/SeaLantern/releases/tag/v1.0.1)
 

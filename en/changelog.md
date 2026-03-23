@@ -2,7 +2,55 @@
 
 [GitHub Releases](https://github.com/SeaLantern-Studio/SeaLantern/releases)
 
-## v1.0.1 <Badge type="tip" text="Latest" />
+## v1.1.0 <Badge type="tip" text="Latest" />
+
+[GitHub Release](https://github.com/SeaLantern-Studio/SeaLantern/releases/tag/v1.1.0)
+
+> 2026-03-24
+
+### Highlights
+- Added Docker support with a dedicated `docker-entry` build path
+- Added server-core downloader capability
+- Added crash notifications and improved panic reporting
+- Bundled license files with the app, plus terms dialog and docs entry links
+
+### Fixes & Improvements
+- Fixed Docker dev-mode and dependency-splitting issues
+- Fixed build warnings and WiX packaging failures
+- Fixed update text glitches, console input issues, and multiple i18n issues
+- Fixed incorrect navigation after canceling multi-threaded downloads
+
+### Engineering & Refactor
+- Landed backend refactor phase 2 and constants migration
+- Reorganized download/plugins pages with better interaction flow
+- Unified CI runners to Ubuntu 22.04
+
+---
+
+## v1.0.2
+
+[GitHub Release](https://github.com/SeaLantern-Studio/SeaLantern/releases/tag/v1.0.2)
+
+> 2026-03-04
+
+### Highlights
+- Added Safe Mode
+- Added CNB update check and download fallback mechanism
+- Improved panic reporting and exception handling
+
+### Fixes & Stability
+- Fixed Safe Mode security logic issues
+- Fixed non-Linux compilation issues
+- Fixed CI failures caused by panic_report cfg guards and legacy dependencies
+
+### Refactor
+- Optimized backend/plugin performance and security paths
+- Removed async runtime and improved Linux panic handling
+- Split DownloadFileView and improved frontend structure
+
+---
+
+## v1.0.1
 
 [GitHub Release](https://github.com/SeaLantern-Studio/SeaLantern/releases/tag/v1.0.1)
 
