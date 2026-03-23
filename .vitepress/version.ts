@@ -10,5 +10,8 @@ export const RELEASE_BASE = `https://cnb.cool/SeaLantern-studio/SeaLantern/-/rel
 /** 安装包资产版本（受上游打包命名影响，可能与 VERSION 不一致） */
 export const ASSET_VERSION = '1.1.0'
 
+/** RPM 包资产版本（遵循 <version>-<release> 命名） */
+export const RPM_ASSET_VERSION = '1.1.0-1'
+
 /** Arch 包资产版本（当前发布命名与其它平台不同） */
 export const ARCH_PKG_ASSET_VERSION = '1.1.0-1'

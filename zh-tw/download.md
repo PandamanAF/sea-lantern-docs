@@ -1,5 +1,5 @@
 <script setup>
-import { VERSION, RELEASE_BASE, ASSET_VERSION, ARCH_PKG_ASSET_VERSION } from '../.vitepress/version'
+import { VERSION, RELEASE_BASE, ASSET_VERSION, RPM_ASSET_VERSION, ARCH_PKG_ASSET_VERSION } from '../.vitepress/version'
 </script>
 
 # 下載安裝
@@ -41,8 +41,8 @@ Windows 與 Linux 已提供 ARM64 安裝包，可依裝置架構選擇下載。
 |------|------|
 | <a :href="`${RELEASE_BASE}/Sea.Lantern_${ASSET_VERSION}_amd64.deb`">DEB</a> | Debian / Ubuntu |
 | <a :href="`${RELEASE_BASE}/Sea.Lantern_${ASSET_VERSION}_arm64.deb`">DEB (ARM64)</a> | Debian / Ubuntu ARM64 |
-| <a :href="`${RELEASE_BASE}/Sea.Lantern-${ASSET_VERSION}.x86_64.rpm`">RPM</a> | Fedora / RHEL (x86_64) |
-| <a :href="`${RELEASE_BASE}/Sea.Lantern-${ASSET_VERSION}.aarch64.rpm`">RPM (ARM64)</a> | Fedora / RHEL (aarch64) |
+| <a :href="`${RELEASE_BASE}/Sea.Lantern-${RPM_ASSET_VERSION}.x86_64.rpm`">RPM</a> | Fedora / RHEL (x86_64) |
+| <a :href="`${RELEASE_BASE}/Sea.Lantern-${RPM_ASSET_VERSION}.aarch64.rpm`">RPM (ARM64)</a> | Fedora / RHEL (aarch64) |
 | <a :href="`${RELEASE_BASE}/Sea.Lantern_${ASSET_VERSION}_amd64.AppImage`">AppImage</a> | 通用格式 |
 | <a :href="`${RELEASE_BASE}/Sea.Lantern_${ASSET_VERSION}_aarch64.AppImage`">AppImage (ARM64)</a> | 通用格式 (ARM64) |
 | <a :href="`${RELEASE_BASE}/sealantern-${ARCH_PKG_ASSET_VERSION}-x86_64.pkg.tar.zst`">pkg.tar.zst</a> | Arch Linux 可安裝套件 (x86_64) |
