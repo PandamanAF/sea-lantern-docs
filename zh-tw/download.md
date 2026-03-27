@@ -35,6 +35,22 @@ Windows 與 Linux 已提供 ARM64 安裝包，可依裝置架構選擇下載。
 | <a :href="`${RELEASE_BASE}/Sea.Lantern_aarch64.app.tar.gz`">app.tar.gz (Apple Silicon)</a> | 可攜壓縮包 |
 | <a :href="`${RELEASE_BASE}/Sea.Lantern_x64.app.tar.gz`">app.tar.gz (Intel)</a> | 可攜壓縮包 |
 
+目前 Release 中的 `dmg` 與 `app.tar.gz` 均尚未完成 Apple 簽名/公證，macOS 可能提示「已損壞，無法開啟」或「無法驗證開發者」。
+
+- `dmg`：先雙擊開啟 DMG，並將 `Sea Lantern.app` 拖到 `/Applications`，再於終端機執行：
+
+```bash
+xattr -dr com.apple.quarantine /Applications/Sea\ Lantern.app
+```
+
+- `app.tar.gz`：先解壓，再於解壓後的目前目錄執行：
+
+```bash
+xattr -dr com.apple.quarantine ./Sea\ Lantern.app
+```
+
+若仍被攔截，可到「系統設定 -> 隱私權與安全性」點選「仍要打開」，或在 App 右鍵選單中選擇「打開」。
+
 ## Linux
 
 | 格式 | 說明 |

@@ -35,6 +35,22 @@ Windows and Linux ARM64 packages are now available. Choose the one matching your
 | <a :href="`${RELEASE_BASE}/Sea.Lantern_aarch64.app.tar.gz`">app.tar.gz (Apple Silicon)</a> | Portable archive |
 | <a :href="`${RELEASE_BASE}/Sea.Lantern_x64.app.tar.gz`">app.tar.gz (Intel)</a> | Portable archive |
 
+Both `dmg` and `app.tar.gz` in current releases are not Apple-signed/notarized yet, so macOS may show “app is damaged” or “developer cannot be verified”.
+
+- `dmg`: open the DMG first, drag `Sea Lantern.app` into `/Applications`, then run:
+
+```bash
+xattr -dr com.apple.quarantine /Applications/Sea\ Lantern.app
+```
+
+- `app.tar.gz`: extract first, then run this in the extracted current directory:
+
+```bash
+xattr -dr com.apple.quarantine ./Sea\ Lantern.app
+```
+
+If it is still blocked, go to “System Settings -> Privacy & Security” and click “Open Anyway”, or right-click the app and choose “Open”.
+
 ## Linux
 
 | Format | Description |
